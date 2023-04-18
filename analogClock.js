@@ -12,6 +12,7 @@ function updateTime() {
     const hour = nowTime.getHours();
     const hourHand = document.querySelector('.hand.hour');
     hourHand.style.rotate = `${(hour + min / 60) * 30}deg`;
+    // this comment is exclusive for 'main' branch only!
 }
 
 setInterval(updateTime, 1000);
